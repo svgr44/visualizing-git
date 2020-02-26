@@ -166,7 +166,6 @@ function(_yargs, d3, demos) {
                     fileReader.onload = function () {
                       var data = fileReader.result;
                       
-                      window.clean();
                       window.localStorage.setItem('git-viz-snapshot', data);
                       window.import();
                     };
